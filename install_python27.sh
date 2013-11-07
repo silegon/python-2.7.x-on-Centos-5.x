@@ -53,16 +53,16 @@ python_info() {
       setuptoolsvers=`curl -m 5 --silent www.askcerebro.com/setuptools/2.7/version`
       setuptoolsurl=`curl -m 5 --silent www.askcerebro.com/setuptools/2.7/url`
     else
-      python2vers=fallback_vers
-      python2url=fallback_url
-      setuptoolsvers=fallback_setuptools_vers
-      setuptoolsurl=fallback_setuptools_url
+      python2vers=$fallback_vers
+      python2url=$fallback_url
+      setuptoolsvers=$fallback_setuptools_vers
+      setuptoolsurl=$fallback_setuptools_url
     fi
   else
-    python2vers=fallback_vers
-    python2url=fallback_url
-    setuptoolsvers=fallback_setuptools_vers
-    setuptoolsurl=fallback_setuptools_url
+    python2vers=$fallback_vers
+    python2url=$fallback_url
+    setuptoolsvers=$fallback_setuptools_vers
+    setuptoolsurl=$fallback_setuptools_url
   fi
 }
 
